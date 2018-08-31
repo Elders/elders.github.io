@@ -583,6 +583,7 @@ html .btn-black,
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-height: 144px;
+	min-height: 75px;
 }
 
 .st-blog-listing-item h4 {
@@ -591,12 +592,19 @@ html .btn-black,
 	font-size:1.7em;
 	text-transform: uppercase;
 	font-weight:800;
+	min-height: 54px;
 }
 
 .st-blog-listing-item a {
 	background-color: #CF0A2C;
     border-color: #CF0A2C #CF0A2C #CF0A2C;
     color: #ffffff;
+}
+
+.st-blog-listing-item a:hover {
+	background-color: #fff;
+    border-color: #fff #fff #fff;
+    color: #141519;
 }
 
 .st-blog-listing-item hr {
@@ -618,9 +626,27 @@ html .btn-black,
     color: #CF0A2C;
 }
 
+.st-blog-listing-wrapper .row > div:nth-child(3n+1) > div a:hover{
+	background-color: #141519;
+    border-color: #141519 #141519 #141519;
+    color: #fff;
+}
+
 .st-blog-listing-wrapper .row > div:nth-child(3n+2) > div{
 	background-color: #f2f1f1;
 	color:#000;
+}
+
+.st-blog-listing-wrapper .row > div:nth-child(3n+2) > div a{
+	background-color: #141519;
+	border-color: #141519 #141519 #141519;
+	color:#fff;
+}
+
+.st-blog-listing-wrapper .row > div:nth-child(3n+2) > div a:hover{
+	background-color: #CF0A2C;
+    border-color: #CF0A2C #CF0A2C #CF0A2C;
+    color: #ffffff;
 }
 
 .st-blog-listing-wrapper .row > div:nth-child(3n+2) > div h4{
